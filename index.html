@@ -341,7 +341,16 @@ revelation mkstatic slides.md
 ```
 revelation mkstatic slides.md --force
 ```
-
+```
+|____ your_folder/
+| |____ slides.md
+| |____ config.py
+| |____ media/
+| |____ output/
+| | |____ media/
+| | |____ static/
+| | |____ index.html
+```
 
                   </textarea>
                 </section>
@@ -353,6 +362,7 @@ revelation mkstatic slides.md --force
 
 ## config file
 
+`config.py`
 ```python
 # Reveal markdown slide separator
 REVEAL_SLIDE_SEPARATOR = "---"
@@ -1184,7 +1194,14 @@ code 3
               </textarea>
             </section>        
           
+            <section data-markdown>
+              <textarea data-template>
+                
 
+# [Hackmd.io](https://hackmd.io)
+
+              </textarea>
+            </section>  
             
               <section data-markdown>
                 <textarea data-template>
