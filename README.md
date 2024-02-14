@@ -18,3 +18,12 @@ sed "s/mathjax\: \'static\/mathjax\/MathJax.js\',//g" output/index.html > index.
       ```
       a=Math.floor( 1250 * ( 1 + e.margin ) ),o=Math.floor( (s.height + 40) * ( 1 + e.margin )
       ```
+4. 或者，直接改 `output/index.html`，定義 `width` and `height`
+```
+Reveal.initialize({
+  // The "normal" size of the presentation, aspect ratio will
+  // be preserved when the presentation is scaled to fit different
+  // resolutions. Can be specified using percentage units.
+  width: 1440,
+  height: 900,
+```
